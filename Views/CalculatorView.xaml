@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculatorMVVM.Views"
         mc:Ignorable="d"
-        Title="CalculatorView" Height="550" Width="400"
+        Title="CalculatorView" Height="800" Width="500"
         WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Style TargetType="Button">
@@ -203,11 +203,6 @@
                 Content="⌫"
                 Command="{Binding Path=FunctionButtonPressCommand}"
                 CommandParameter="Del" />
-
-        <ContentControl Grid.Row="3"
-                        Grid.ColumnSpan="5"
-                        Grid.RowSpan="3" 
-                        Content="{Binding SelectedViewModel}"/>
 
         <Button Grid.Row="3"
                 Grid.Column="0"

@@ -13,18 +13,7 @@ namespace CalculatorMVVM.ViewModels
 {
     public class CalculatorViewModel : ViewModelBase
     {
-        private ViewModelBase _selectedViewModel;
-
-        public ViewModelBase SelectedViewModel
-        {
-            get { return _selectedViewModel; }
-            set
-            {
-                _selectedViewModel = value;
-                OnPropertyChanged(nameof(SelectedViewModel));
-            }
-        }
-
+        #region Properties
         public CalculatorModel _model { get; set; } = new CalculatorModel();
 
         private string _entered_Number = "";
@@ -48,26 +37,16 @@ namespace CalculatorMVVM.ViewModels
                 OnPropertyChanged("KeyPressedString");
             }
         }
+        #endregion
+
+        #region Commands
         public ICommand DigitButtonPressCommand { get; set; }
         public ICommand OperationButtonPressCommand { get; set; }
         public ICommand FunctionButtonPressCommand { get; set; }
         public ICommand KeyBindingCommand { get; set; }
+        #endregion
 
-        //List<string> EnteredKeys;
-        //double number = 0;
-        //void updateEnteredKeysOnGui()
-        //{
-        //    string temp = "";
-        //    for (int i = 0; i < EnteredKeys.Count; i++)
-        //        temp += EnteredKeys[i];
-        //    KeyPressedString = temp;
-        //}
-
-        //void Addition()
-        //{
-        //    number += Convert.ToDouble(Entered_Number);
-        //    Entered_Number = number.ToString();
-        //}
+        #region Methods
         public double Factorial(double number)
         {
             if (number >= 171)
@@ -219,6 +198,22 @@ namespace CalculatorMVVM.ViewModels
         {
             return Math.PI * angle / 180.0;
         }
+
+        public void GetDeleteButtonPress()
+        {
+            if (Entered_Number.Length > 0)
+                Entered_Number = Entered_Number.Remove(Entered_Number.Length - 1);
+        }
+
+        public void GetResetButtonPress()
+        {
+            _model.FirstOperand = 0;
+            _model.SecondOperand = 0;
+            Entered_Number = "";
+            KeyPressedString = "";
+        }
+        #endregion
+
         public void GetPressButtonOperation(string operation)
         {
             try
@@ -274,22 +269,10 @@ namespace CalculatorMVVM.ViewModels
             }
         }
 
-        public void GetDeleteButtonPress()
-        {
-            if (Entered_Number.Length > 0)
-                Entered_Number = Entered_Number.Remove(Entered_Number.Length - 1);
-        }
-
-        public void GetResetButtonPress()
-        {
-            _model.FirstOperand = 0;
-            _model.SecondOperand = 0;
-            Entered_Number = "";
-            KeyPressedString = "";
-        }
+        
 
         public CalculatorViewModel()
-        {
+        { 
 
             DigitButtonPressCommand = new DigitButtonPressCommand(this);
 
@@ -298,6 +281,7 @@ namespace CalculatorMVVM.ViewModels
             FunctionButtonPressCommand = new FunctionButtonPressCommand(this);
 
             KeyBindingCommand = new KeyBindingCommand(this);
+
         }
 
 

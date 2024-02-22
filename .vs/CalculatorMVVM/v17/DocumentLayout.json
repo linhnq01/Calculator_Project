@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "D:\\Learning\\CalculatorMVVM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\viewmodels\\calculatorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:viewmodels\\calculatorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\views\\calculatorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:views\\calculatorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\commands\\operationbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:commands\\operationbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\commands\\digitbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:commands\\digitbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\views\\calculatorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:views\\calculatorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\commands\\keybindingcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:commands\\keybindingcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\viewmodels\\calculatorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:viewmodels\\calculatorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\commands\\digitbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:commands\\digitbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\commands\\functionbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:commands\\functionbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|d:\\learning\\calculatormvvm\\commands\\operationbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B3B818-3BE7-4389-8E46-69A164CE10A8}|CalculatorMVVM.csproj|solutionrelative:commands\\operationbuttonpresscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +46,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DigitButtonPressCommand.cs",
-              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Commands\\DigitButtonPressCommand.cs",
-              "RelativeDocumentMoniker": "Commands\\DigitButtonPressCommand.cs",
-              "ToolTip": "D:\\Learning\\CalculatorMVVM\\Commands\\DigitButtonPressCommand.cs",
-              "RelativeToolTip": "Commands\\DigitButtonPressCommand.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAgwDwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T01:46:55.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KeyBindingCommand.cs",
-              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Commands\\KeyBindingCommand.cs",
-              "RelativeDocumentMoniker": "Commands\\KeyBindingCommand.cs",
-              "ToolTip": "D:\\Learning\\CalculatorMVVM\\Commands\\KeyBindingCommand.cs",
-              "RelativeToolTip": "Commands\\KeyBindingCommand.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAwDwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T01:45:39.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OperationButtonPressCommand.cs",
-              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Commands\\OperationButtonPressCommand.cs",
-              "RelativeDocumentMoniker": "Commands\\OperationButtonPressCommand.cs",
-              "ToolTip": "D:\\Learning\\CalculatorMVVM\\Commands\\OperationButtonPressCommand.cs",
-              "RelativeToolTip": "Commands\\OperationButtonPressCommand.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T01:28:07.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CalculatorView.xaml",
               "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Views\\CalculatorView.xaml",
               "RelativeDocumentMoniker": "Views\\CalculatorView.xaml",
               "ToolTip": "D:\\Learning\\CalculatorMVVM\\Views\\CalculatorView.xaml",
               "RelativeToolTip": "Views\\CalculatorView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-21T09:14:13.735Z",
+              "WhenOpened": "2024-02-22T03:21:16.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalculatorView.xaml.cs",
+              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Views\\CalculatorView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CalculatorView.xaml.cs",
+              "ToolTip": "D:\\Learning\\CalculatorMVVM\\Views\\CalculatorView.xaml.cs",
+              "RelativeToolTip": "Views\\CalculatorView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T03:31:29.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\Learning\\CalculatorMVVM\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-22T03:37:14.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DigitButtonPressCommand.cs",
+              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Commands\\DigitButtonPressCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\DigitButtonPressCommand.cs",
+              "ToolTip": "D:\\Learning\\CalculatorMVVM\\Commands\\DigitButtonPressCommand.cs",
+              "RelativeToolTip": "Commands\\DigitButtonPressCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T03:21:39.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KeyBindingCommand.cs",
+              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Commands\\KeyBindingCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\KeyBindingCommand.cs",
+              "ToolTip": "D:\\Learning\\CalculatorMVVM\\Commands\\KeyBindingCommand.cs",
+              "RelativeToolTip": "Commands\\KeyBindingCommand.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T03:21:33.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CalculatorViewModel.cs",
               "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\ViewModels\\CalculatorViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\CalculatorViewModel.cs",
               "ToolTip": "D:\\Learning\\CalculatorMVVM\\ViewModels\\CalculatorViewModel.cs",
               "RelativeToolTip": "ViewModels\\CalculatorViewModel.cs",
-              "ViewState": "AQIAANMAAAAAAAAAAAAswO0AAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-21T07:36:55.813Z",
+              "WhenOpened": "2024-02-22T03:21:44.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FunctionButtonPressCommand.cs",
+              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Commands\\FunctionButtonPressCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\FunctionButtonPressCommand.cs",
+              "ToolTip": "D:\\Learning\\CalculatorMVVM\\Commands\\FunctionButtonPressCommand.cs",
+              "RelativeToolTip": "Commands\\FunctionButtonPressCommand.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswCMAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T03:21:31.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\Learning\\CalculatorMVVM\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T03:37:26.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OperationButtonPressCommand.cs",
+              "DocumentMoniker": "D:\\Learning\\CalculatorMVVM\\Commands\\OperationButtonPressCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\OperationButtonPressCommand.cs",
+              "ToolTip": "D:\\Learning\\CalculatorMVVM\\Commands\\OperationButtonPressCommand.cs",
+              "RelativeToolTip": "Commands\\OperationButtonPressCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T03:21:35.29Z",
               "EditorCaption": ""
             }
           ]

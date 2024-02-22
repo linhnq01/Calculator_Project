@@ -20,3 +20,4 @@ D:\Learning\CalculatorMVVM\obj\Debug\net7.0-windows\refint\CalculatorMVVM.dll
 D:\Learning\CalculatorMVVM\obj\Debug\net7.0-windows\CalculatorMVVM.pdb
 D:\Learning\CalculatorMVVM\obj\Debug\net7.0-windows\CalculatorMVVM.genruntimeconfig.cache
 D:\Learning\CalculatorMVVM\obj\Debug\net7.0-windows\ref\CalculatorMVVM.dll
+D:\Learning\CalculatorMVVM\obj\Debug\net7.0-windows\CalculatorMVVM.sourcelink.json
