@@ -1,0 +1,313 @@
+﻿<Window x:Class="CalculatorMVVM.Views.CalculatorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorMVVM.Views"
+        mc:Ignorable="d"
+        Title="CalculatorView" Height="550" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+                    Value="2" />
+            <Setter Property="Background"
+                    Value="White" />
+            <Setter Property="FontWeight"
+                    Value="Bold" />
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="Template"
+                    Value="{DynamicResource RoundedButtonStyle}" />
+        </Style>
+        <SolidColorBrush x:Key="Button.MouseOver.Background"
+                         Color="#FFBEE6FD" />
+        <SolidColorBrush x:Key="Button.MouseOver.Border"
+                         Color="#FF3C7FB1" />
+        <SolidColorBrush x:Key="Button.Pressed.Background"
+                         Color="#FFC4E5F6" />
+        <SolidColorBrush x:Key="Button.Pressed.Border"
+                         Color="#FF2C628B" />
+        <SolidColorBrush x:Key="Button.Disabled.Background"
+                         Color="#FFF4F4F4" />
+        <SolidColorBrush x:Key="Button.Disabled.Border"
+                         Color="#FFADB2B5" />
+        <SolidColorBrush x:Key="Button.Disabled.Foreground"
+                         Color="#FF838383" />
+        <ControlTemplate x:Key="RoundedButtonStyle"
+                         TargetType="{x:Type ButtonBase}">
+            <Border x:Name="border"
+                    CornerRadius="10"
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    SnapsToDevicePixels="true">
+                <ContentPresenter x:Name="contentPresenter"
+                                  Focusable="False"
+                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                  Margin="{TemplateBinding Padding}"
+                                  RecognizesAccessKey="True"
+                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Button.IsDefaulted"
+                         Value="true">
+                    <Setter Property="BorderBrush"
+                            TargetName="border"
+                            Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+                </Trigger>
+                <Trigger Property="IsMouseOver"
+                         Value="true">
+                    <Setter Property="Background"
+                            TargetName="border"
+                            Value="{StaticResource Button.MouseOver.Background}" />
+                    <Setter Property="BorderBrush"
+                            TargetName="border"
+                            Value="{StaticResource Button.MouseOver.Border}" />
+                </Trigger>
+                <Trigger Property="IsPressed"
+                         Value="true">
+                    <Setter Property="Background"
+                            TargetName="border"
+                            Value="{StaticResource Button.Pressed.Background}" />
+                    <Setter Property="BorderBrush"
+                            TargetName="border"
+                            Value="{StaticResource Button.Pressed.Border}" />
+                </Trigger>
+                <Trigger Property="IsEnabled"
+                         Value="false">
+                    <Setter Property="Background"
+                            TargetName="border"
+                            Value="{StaticResource Button.Disabled.Background}" />
+                    <Setter Property="BorderBrush"
+                            TargetName="border"
+                            Value="{StaticResource Button.Disabled.Border}" />
+                    <Setter Property="TextElement.Foreground"
+                            TargetName="contentPresenter"
+                            Value="{StaticResource Button.Disabled.Foreground}" />
+                </Trigger>
+
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Key="D0"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="0" />
+        <KeyBinding Key="D1"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="1" />
+        <KeyBinding Key="D2"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="2" />
+        <KeyBinding Key="D3"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="3" />
+        <KeyBinding Key="D4"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="4" />
+        <KeyBinding Key="D5"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="5" />
+        <KeyBinding Key="D6"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="6" />
+        <KeyBinding Key="D7"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="7" />
+        <KeyBinding Key="D8"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="8" />
+        <KeyBinding Key="D9"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="9" />
+        <KeyBinding Key="Add"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="+" />
+        <KeyBinding Key="Subtract"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="-" />
+        <KeyBinding Key="Multiply"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="*" />
+        <KeyBinding Key="Divide"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="/" />
+        <KeyBinding Key="Decimal"
+                    Command="{Binding KeyBindingCommand}"
+                    CommandParameter="." />
+    </Window.InputBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="1.5*" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.ColumnSpan="5"
+                      VerticalScrollBarVisibility="Disabled"
+                      HorizontalScrollBarVisibility="Auto">
+            <TextBlock Text="{Binding Path=KeyPressedString}"
+                       VerticalAlignment="Bottom"
+                       HorizontalAlignment="Right"
+                       FontWeight="Bold"
+                       FontSize="30" />
+        </ScrollViewer>
+        <ScrollViewer VerticalScrollBarVisibility="Disabled"
+                      HorizontalScrollBarVisibility="Auto"
+                      Grid.Row="1"
+                      Grid.ColumnSpan="5">
+            <TextBlock Text="{Binding Path=Entered_Number}"
+                       VerticalAlignment="Bottom"
+                       HorizontalAlignment="Right"
+                       FontWeight="Bold"
+                       FontSize="80" />
+        </ScrollViewer>
+
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                Content="AC"
+                FontWeight="Bold"
+                Background="#FF3333"
+                Foreground="White"
+                Command="{Binding Path=FunctionButtonPressCommand}"
+                CommandParameter="AC" />
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Content="%"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="%" />
+        <Button Grid.Row="2"
+                Grid.Column="2"
+                Content="^"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="^" />
+        <Button Grid.Row="2"
+                Grid.Column="3"
+                Content="/"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="/" />
+        <Button Grid.Row="2"
+                Grid.Column="4"
+                Content="⌫"
+                Command="{Binding Path=FunctionButtonPressCommand}"
+                CommandParameter="Del" />
+
+        <ContentControl Grid.Row="3"
+                        Grid.ColumnSpan="5"
+                        Grid.RowSpan="3" 
+                        Content="{Binding SelectedViewModel}"/>
+
+        <Button Grid.Row="3"
+                Grid.Column="0"
+                Content="7"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="7" />
+        <Button Grid.Row="3"
+                Grid.Column="1"
+                Content="8"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="8" />
+        <Button Grid.Row="3"
+                Grid.Column="2"
+                Content="9"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="9" />
+        <Button Grid.Row="3"
+                Grid.Column="3"
+                Content="*"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="*" />
+        <Button Grid.Row="3"
+                Grid.Column="4"
+                Content="sin()"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="sin" />
+
+        <Button Grid.Row="4"
+                Grid.Column="0"
+                Content="4"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="4" />
+        <Button Grid.Row="4"
+                Grid.Column="1"
+                Content="5"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="5" />
+        <Button Grid.Row="4"
+                Grid.Column="2"
+                Content="6"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="6" />
+        <Button Grid.Row="4"
+                Grid.Column="3"
+                Content="-"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="-" />
+        <Button Grid.Row="4"
+                Grid.Column="4"
+                Content="cos()"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="cos" />
+
+        <Button Grid.Row="5"
+                Grid.Column="0"
+                Content="1"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="1" />
+        <Button Grid.Row="5"
+                Grid.Column="1"
+                Content="2"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="2" />
+        <Button Grid.Row="5"
+                Grid.Column="2"
+                Content="3"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="3" />
+        <Button Grid.Row="5"
+                Grid.Column="3"
+                Content="+"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="+" />
+        <Button Grid.Row="5"
+                Grid.Column="4"
+                Content="√"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="√" />
+
+        <Button Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Content="0"
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="0" />
+        <Button Grid.Row="6"
+                Grid.Column="2"
+                Content="."
+                Command="{Binding Path=DigitButtonPressCommand}"
+                CommandParameter="." />
+        <Button Grid.Row="6"
+                Grid.Column="3"
+                Content="!"
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="!" />
+        <Button Grid.Row="6"
+                Grid.Column="4"
+                Background="#FF1975C5"
+                Content="="
+                Command="{Binding Path=OperationButtonPressCommand}"
+                CommandParameter="=" />
+    </Grid>
+</Window>
